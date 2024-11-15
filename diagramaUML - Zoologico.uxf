@@ -1,0 +1,60 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>352</x><y>143</y><w>231</w><h>209</h></coordinates><panel_attributes>Zoologico
+--
+
+--
++ agregarAnimal(Nave nave) : void
++ mostrarAnimales() : void
++ vacunarAnimales() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>693</x><y>88</y><w>385</w><h>264</h></coordinates><panel_attributes>/Animal/
+--
+- nombre: String
+- edad: int
+
+--
++ Animal(String, int)
++ getNombre() : String
++ getEdad() : int
++ setNombre(String ) : void
++ setEdad(int ) : void
+
++ equals() : boolean
++ hashCode() : int
++ toString() : String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1078</x><y>539</y><w>231</w><h>209</h></coordinates><panel_attributes>Reptil
+--
+- tipoEscama: String
+- regTemperatura : String
+--
++ Reptil(String, int, String, String)
++ toString() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>792</x><y>539</y><w>231</w><h>209</h></coordinates><panel_attributes>Ave
+--
+- envergaduraAlas: double
+--
++ Ave(String, int, double)
++ vacunar() : void
++ toString() : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>517</x><y>539</y><w>231</w><h>209</h></coordinates><panel_attributes>Mamifero
+--
+- peso : double
+--
++ Mamifero(String, int, double, dieta)
++ vacunar() : void
++ toString() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>154</x><y>616</y><w>132</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+dieta
+--
++ HERBIVORO
++ CARNIVORO
++ OMNIVORO
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>638</y><w>264</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-dietaMamifero</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>572</x><y>264</y><w>143</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- animales</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>891</y><w>231</w><h>132</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Vacunable
+--
++ vacunar() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>902</x><y>341</y><w>286</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;200;140;240;180</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>341</y><w>33</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>341</y><w>33</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>836</x><y>737</y><w>33</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>715</x><y>737</y><w>33</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>132</x><y>363</y><w>187</w><h>99</h></coordinates><panel_attributes>&lt;&lt;exception&gt;&gt;
+AnimalDuplicadoException
+--
+_-MESSAGE_
+--
++ AnimalDuplicadoException()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>176</x><y>242</y><w>187</w><h>143</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;110;10;10;150;10</additional_attributes></element></diagram>
